@@ -4,6 +4,7 @@ require 'pry'
 def create_project_hash
   # write your code here
   html = File.read('fixtures/kickstarter.html')
+<<<<<<< HEAD
   kickstarter = Nokogiri::HTML(html)
 
   projects = {}
@@ -33,3 +34,12 @@ end
 # description: project.css("p.bbcard_blurb").text
 # location: project.css("span.location-name").text
 # percent_funded: project.css("ul.project-stats li.first.funded strong").text.gsub("%","").to_i
+=======
+
+  kickstarter = Nokogiri::HTML(html)
+
+  binding.pry
+end
+
+create_project_hash
+>>>>>>> e68e5d7e78d143d4adf802444896c145a55745de
